@@ -112,6 +112,114 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &37967246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 37967248}
+  - component: {fileID: 37967247}
+  m_Layer: 0
+  m_Name: Scoreboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &37967247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37967246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5d5bd36105d48d494ed317ef728c29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstPersonCamera: {fileID: 1391627513}
+--- !u!4 &37967248
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37967246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_Children:
+  - {fileID: 39520151}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &39520150
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 37967248}
+    m_Modifications:
+    - target: {fileID: 1856017642869634, guid: 0468e941f6b2e446492c3ee426b858ab, type: 3}
+      propertyPath: m_Name
+      value: ScoreboardDisplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785578339416610, guid: 0468e941f6b2e446492c3ee426b858ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785578339416610, guid: 0468e941f6b2e446492c3ee426b858ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785578339416610, guid: 0468e941f6b2e446492c3ee426b858ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785578339416610, guid: 0468e941f6b2e446492c3ee426b858ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785578339416610, guid: 0468e941f6b2e446492c3ee426b858ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785578339416610, guid: 0468e941f6b2e446492c3ee426b858ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785578339416610, guid: 0468e941f6b2e446492c3ee426b858ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785578339416610, guid: 0468e941f6b2e446492c3ee426b858ab, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785578339416610, guid: 0468e941f6b2e446492c3ee426b858ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785578339416610, guid: 0468e941f6b2e446492c3ee426b858ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4785578339416610, guid: 0468e941f6b2e446492c3ee426b858ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0468e941f6b2e446492c3ee426b858ab, type: 3}
+--- !u!4 &39520151 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4785578339416610, guid: 0468e941f6b2e446492c3ee426b858ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 39520150}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &463684048
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,6 +343,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c10877f7cd5764de18d46d7b777d1faa, type: 3}
+--- !u!20 &1391627513 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 20155940112608238, guid: c10877f7cd5764de18d46d7b777d1faa,
+    type: 3}
+  m_PrefabInstance: {fileID: 1391627512}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1806899825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -302,6 +416,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1857603338}
   - component: {fileID: 1857603337}
+  - component: {fileID: 1857603340}
+  - component: {fileID: 1857603339}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -321,6 +437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3e8cda9b9b6c4506b05942f35804c4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstPersonCamera: {fileID: 1391627513}
+  scoreboard: {fileID: 37967247}
 --- !u!4 &1857603338
 Transform:
   m_ObjectHideFlags: 0
@@ -335,3 +453,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1857603339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857603336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c669a4cc43174caea1a3748b76f2652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DetectedPlanePrefab: {fileID: 1654175882956584, guid: 6a35c744e5010405c847fad90282d2be,
+    type: 3}
+--- !u!114 &1857603340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857603336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1d794558f4bc45ef899cad4cc224cfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handleScaleInput: 1
+  adjustScale: 0

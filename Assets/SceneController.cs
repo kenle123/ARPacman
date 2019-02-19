@@ -7,6 +7,7 @@ public class SceneController : MonoBehaviour
 {
     public Camera firstPersonCamera;
     public ScoreboardController scoreboard;
+    public PacmanController pacmanController;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,8 @@ public class SceneController : MonoBehaviour
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
         ProcessTouches();
+
+        scoreboard.SetScore(pacmanController.GetLength());
     }
 
     void QuitOnConnectionErrors()
@@ -70,5 +73,7 @@ public class SceneController : MonoBehaviour
         Debug.Log("Selected plane centered at " + selectedPlane.CenterPose.position);
 
         scoreboard.SetSelectedPlane(selectedPlane);
+        pacmanController.SetPlane(selectedPlane);
+        GetComponent<PelletController>().SetSelectedPlane(selectedPlane);
     }
 }

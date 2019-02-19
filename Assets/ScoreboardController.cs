@@ -42,6 +42,13 @@ public class ScoreboardController : MonoBehaviour
         {
             detectedPlane = detectedPlane.SubsumedBy;
         }
+
+        // Make the scoreboard face the viewer.
+        transform.LookAt(firstPersonCamera.transform);
+
+        // Move the position to stay consistent with the plane.
+        transform.position = new Vector3(transform.position.x,
+                    detectedPlane.CenterPose.position.y + yOffset, transform.position.z);
     }
 
     public void SetSelectedPlane(DetectedPlane detectedPlane)
@@ -77,6 +84,15 @@ public class ScoreboardController : MonoBehaviour
         foreach (Renderer r in GetComponentsInChildren<Renderer>())
         {
             r.enabled = true;
+        }
+    }
+
+    public void SetScore(int score)
+    {
+        if (this.score != score)
+        {
+            GetComponentInChildren<TextMesh>().text = "Score: " + score;
+            this.score = score;
         }
     }
 }
