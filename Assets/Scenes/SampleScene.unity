@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -624,6 +624,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodModels:
-  - {fileID: 1913620319998376, guid: 1084833c96f064d348b5f2d6b92e4d2b, type: 3}
+  - {fileID: 5927466589293902642, guid: d57e3a96671db1f468d2aeda1c3aa3b2, type: 3}
   - {fileID: 1857551045338566, guid: 6ed7a7f7a75ef400a883c50389e70412, type: 3}
   - {fileID: 1141594904977818, guid: 26f6bd880ce034294949696670b9a2ca, type: 3}
