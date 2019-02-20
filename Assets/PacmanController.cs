@@ -14,7 +14,7 @@ public class PacmanController : MonoBehaviour
     public Camera firstPersonCamera;
 
     // Speed to move.
-    public float speed = 20f;
+    public float speed = 10f;
 
     // Start is called before the first frame update
     void Start()
