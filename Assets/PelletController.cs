@@ -10,7 +10,7 @@ public class PelletController : MonoBehaviour
     private float pelletAge;
     private readonly float maxAge = 10f;
 
-    public GameObject[] foodModels;
+    public GameObject[] pelletModel;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +40,7 @@ public class PelletController : MonoBehaviour
 
         if (pelletInstance == null || pelletInstance.activeSelf == false)
         {
-            SpawnFoodInstance();
+            SpawnPelletInstance();
             return;
         }
 
@@ -57,9 +57,9 @@ public class PelletController : MonoBehaviour
         detectedPlane = selectedPlane;
     }
 
-    void SpawnFoodInstance()
+    void SpawnPelletInstance()
     {
-        GameObject foodItem = foodModels[Random.Range(0, foodModels.Length)];
+        GameObject pelletItem = pelletModel[Random.Range(0, pelletModel.Length)];
 
         // Pick a location.  This is done by selecting a vertex at random and then
         // a random point between it and the center of the plane.
@@ -74,11 +74,11 @@ public class PelletController : MonoBehaviour
 
         Anchor anchor = detectedPlane.CreateAnchor(new Pose(position, Quaternion.identity));
 
-        pelletInstance = Instantiate(foodItem, position, Quaternion.identity,
+        pelletInstance = Instantiate(pelletItem, position, Quaternion.identity,
                  anchor.transform);
 
         // Set the tag.
-        pelletInstance.tag = "food";
+        pelletInstance.tag = "pellet";
 
         pelletInstance.transform.localScale = new Vector3(.025f, .025f, .025f);
         pelletInstance.transform.SetParent(anchor.transform);

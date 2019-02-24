@@ -6,7 +6,7 @@ public class PelletConsumer : MonoBehaviour
 {
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "food")
+        if (collision.gameObject.tag == "pellet")
         {
             collision.gameObject.SetActive(false);
             Slithering s = GetComponentInParent<Slithering>();
