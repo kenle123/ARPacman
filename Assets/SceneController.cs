@@ -41,8 +41,6 @@ public class SceneController : MonoBehaviour
         }
         else if (Session.Status.IsError())
         {
-            // This covers a variety of errors.  See reference for details
-            // https://developers.google.com/ar/reference/unity/namespace/GoogleARCore
             StartCoroutine(CodelabUtils.ToastAndExit(
                 "ARCore encountered a problem connecting. Please restart the app.", 5));
         }

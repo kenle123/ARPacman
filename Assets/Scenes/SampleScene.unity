@@ -322,11 +322,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd688ff6e63674a5aaae1ba308af22eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snakeHeadPrefab: {fileID: 1513151796975466, guid: 20bced297c6d040a8aa55859197c9ff2,
+  pacmanPrefab: {fileID: 1513151796975466, guid: 20bced297c6d040a8aa55859197c9ff2,
     type: 3}
   pointer: {fileID: 1172240641}
   firstPersonCamera: {fileID: 1391627513}
-  speed: 20
+  speed: 5
 --- !u!114 &1338877651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pelletModel:
-  - {fileID: 5345998759568433395, guid: 4fee8c5b31dc3784890403a010d3a6f1, type: 3}
+  - {fileID: 8194740227011572151, guid: 4fee8c5b31dc3784890403a010d3a6f1, type: 3}
 --- !u!1001 &5006117973100742243
 PrefabInstance:
   m_ObjectHideFlags: 0
