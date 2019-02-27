@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd688ff6e63674a5aaae1ba308af22eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pacmanPrefab: {fileID: 1513151796975466, guid: 20bced297c6d040a8aa55859197c9ff2,
+  pacmanPrefab: {fileID: 3020810564859123394, guid: d685f90e027478c4698e657438097f21,
     type: 3}
   pointer: {fileID: 1172240641}
   firstPersonCamera: {fileID: 1391627513}
