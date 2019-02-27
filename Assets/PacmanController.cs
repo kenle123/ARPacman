@@ -87,15 +87,7 @@ public class PacmanController : MonoBehaviour
         pacmanInstance = Instantiate(pacmanPrefab, pos,
                 Quaternion.identity, transform);
 
-        // Pass the head to the slithering component to make movement work.
-        GetComponent<Slithering>().Head = pacmanInstance.transform;
-
         // After instantiating a new snake instance, add the FoodConsumer component.
         pacmanInstance.AddComponent<PelletConsumer>();
-    }
-
-    public int GetLength()
-    {
-        return GetComponent<Slithering>().GetLength();
     }
 }

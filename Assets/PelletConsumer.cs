@@ -9,12 +9,6 @@ public class PelletConsumer : MonoBehaviour
         if (collision.gameObject.tag == "pellet")
         {
             collision.gameObject.SetActive(false);
-            Slithering s = GetComponentInParent<Slithering>();
-
-            if (s != null)
-            {
-                s.AddBodyPart();
-            }
         }
     }
 }

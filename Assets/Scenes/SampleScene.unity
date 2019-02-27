@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -301,7 +301,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1338877652}
-  - component: {fileID: 1338877651}
   - component: {fileID: 1338877650}
   m_Layer: 0
   m_Name: Pacman
@@ -327,22 +326,6 @@ MonoBehaviour:
   pointer: {fileID: 1172240641}
   firstPersonCamera: {fileID: 1391627513}
   speed: 5
---- !u!114 &1338877651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338877649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a416ca76c65a8479ea67f290b38da363, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bodyPrefab: {fileID: 1472386904163680, guid: 6af456afd8c164df8977a0cb26219113, type: 3}
-  speed: 15
-  rotationSpeed: 50
-  minDistance: 0.05
 --- !u!4 &1338877652
 Transform:
   m_ObjectHideFlags: 0
@@ -531,6 +514,14 @@ PrefabInstance:
     - target: {fileID: 4164932791112670, guid: ce5bf59ee50eb4aa18e3c2026f279197, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4164932791112670, guid: ce5bf59ee50eb4aa18e3c2026f279197, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4164932791112670, guid: ce5bf59ee50eb4aa18e3c2026f279197, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce5bf59ee50eb4aa18e3c2026f279197, type: 3}

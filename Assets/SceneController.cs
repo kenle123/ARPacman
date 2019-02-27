@@ -29,7 +29,7 @@ public class SceneController : MonoBehaviour
 
         ProcessTouches();
 
-        scoreboard.SetScore(pacmanController.GetLength());
+        //scoreboard.SetScore(pacmanController.GetLength());
     }
 
     void QuitOnConnectionErrors()
