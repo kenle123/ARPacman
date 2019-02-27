@@ -70,11 +70,11 @@ public class PacmanController : MonoBehaviour
     public void SetPlane(DetectedPlane plane)
     {
         detectedPlane = plane;
-        // Spawn a new snake.
-        SpawnSnake();
+        // Spawn Pacman
+        SpawnPacman();
     }
 
-    void SpawnSnake()
+    void SpawnPacman()
     {
         if (pacmanInstance != null)
         {
