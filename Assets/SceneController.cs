@@ -8,6 +8,7 @@ public class SceneController : MonoBehaviour
     public Camera firstPersonCamera;
     public ScoreboardController scoreboard;
     public PacmanController pacmanController;
+    public BlinkyController blinkyController;
 
     // Start is called before the first frame update
     void Start()
@@ -72,6 +73,7 @@ public class SceneController : MonoBehaviour
 
         scoreboard.SetSelectedPlane(selectedPlane);
         pacmanController.SetPlane(selectedPlane);
+        blinkyController.SetPlane(selectedPlane);
         GetComponent<PelletController>().SetSelectedPlane(selectedPlane);
     }
 }
