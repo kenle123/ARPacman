@@ -7,6 +7,6 @@ public class MainMenu : MonoBehaviour
 {
     public void PlaySinglePlayer()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("2DMap");
     }
 }
