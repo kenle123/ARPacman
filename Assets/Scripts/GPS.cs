@@ -52,4 +52,10 @@ public class GPS : MonoBehaviour
 
         yield break;
     }
+
+    private void Update()
+    {
+        latitude = Input.location.lastData.latitude;
+        longitude = Input.location.lastData.longitude;
+    }
 }
