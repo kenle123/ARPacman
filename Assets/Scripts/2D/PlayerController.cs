@@ -6,8 +6,8 @@ public class PlayerController : MonoBehaviour
 {
 
     RectTransform m_RectTransform;
-    float m_xAxis, m_yAxis;
-    static float start_xAxis, start_yAxis;
+    double m_xAxis, m_yAxis;
+    static double start_xAxis, start_yAxis;
 
     // Start is called before the first frame update
     void Start()
@@ -20,10 +20,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        m_xAxis = (GPS.Instance.latitude - start_xAxis)*10;
-        m_yAxis = (GPS.Instance.longitude - start_yAxis)*10;
+        m_xAxis = (GPS.Instance.latitude - start_xAxis) * 10000;
+        m_yAxis = (GPS.Instance.longitude - start_yAxis ) * 10000;
         Debug.Log("x: " + m_xAxis);
         Debug.Log("y: " + m_yAxis);
-        m_RectTransform.anchoredPosition = new Vector2(m_xAxis, m_yAxis);
+        m_RectTransform.anchoredPosition = new Vector2((float) m_xAxis, (float)m_yAxis);
     }
 }
