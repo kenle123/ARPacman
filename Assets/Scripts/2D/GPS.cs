@@ -19,6 +19,8 @@ public class GPS : MonoBehaviour
         StartCoroutine(StartLocationService());
     }
 
+
+
     private IEnumerator StartLocationService()
     {
         if (!Input.location.isEnabledByUser)
@@ -27,7 +29,7 @@ public class GPS : MonoBehaviour
             yield break;
         }
 
-        Input.location.Start();
+        Input.location.Start(1.0f, 1.0f);
         int maxWait = 20;
         while (Input.location.status == LocationServiceStatus.Initializing && maxWait > 0)
         {
